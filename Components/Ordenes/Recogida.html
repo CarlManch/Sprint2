@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista</title>
+    </head>
+        
+        
+    <div style="width: 1500px;transform: translate(23px);background-color: rgb(25, 190, 212);">  
+    
+
+        <div style='text-align:right' class="card text-bg-primary mb -2" style="width: 1000px; height: 5 px; background-color: white;">
+        
+        <center><FONT SIZE=4>Insta</FONT><FONT SIZE=6 COLOR="Yellow">Y</FONT><FONT ALIGN=CENTERFONT SIZE=4>a</FONT></P></center>
+        <center><FONT SIZE=4>Registro Ordenes</FONT></center>
+        
+    </div>
+        
+            <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+            <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <div class="container">
+            <div class="row">
+            </div>
+            <div class="card text-bg-primary mb -7" style="width: 1000px; padding: 0 60px;background-color: white;">
+            <div class="row">
+                <P ALIGN=rigth><span id="displayTime"></span></p><input id="myTime" class="mb-2 d-inline" type="time" style="transform: translate(5 px);" onchange="onTimeChange()" />
+                <div class='col-sm-6'>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1'>
+                            <input type='text' class="form-control" />
+                                <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>       
+            <div>
+        </div>
+        <br>
+        <br>
+        <div>
+        <div><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/locales/bootstrap-datepicker.es.min.js"></script>
+        <script >
+            $(function () {
+                $('#datetimepicker1').datepicker({
+                    format: "dd/mm/yyyy",
+                    language: "es",
+                    autoclose: true,
+                    todayHighlight: true
+                });
+            });
+        </script>
+        </div>
+       <br>
+        <label class="visually-hidden" for="autoSizingInputGroup">Largo</label>
+        <input type="text" name="largo" maxlength="30" value="" />
+        <label class="visually-hidden" for="autoSizingInputGroup">Largo</label>
+        <input type="text" name="largo" maxlength="30" value="" />
+        <label class="visually-hidden" for="autoSizingInputGroup">Alto</label>
+        <input type="text" name="alto" maxlength="30" value="" />
+        <label class="visually-hidden" for="autoSizingInputGroup">Peso</label>
+        <input type="text" name="peso" maxlength="30" value="" />
+        <br>
+        <br>
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInputGroup">Direccion de Recogida</label>
+                <div class="input-group">
+                 <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Direccion de Recogida">
+            </div>
+            <br>
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInputGroup">Ciudad de Recogida</label>
+                <div class="input-group">
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Ciudad de Recogida">
+            </div>
+            <br>
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInputGroup">Nombre Destinatario</label>
+                <div class="input-group">
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Nombre Destinatario">
+            </div>
+            <br>
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInputGroup">Cedula/Nit Destinatario</label>
+                <div class="input-group">
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Cedula/Nit Destinatario">
+            </div>
+
+            <br>
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInputGroup">Direccion de Entrega</label>
+                <div class="input-group">
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Direccion de Entrega">
+            </div>
+
+            <br>
+            <div class="col-auto">
+                <label class="visually-hidden" for="autoSizingInputGroup">Ciudad de Entrega</label>
+                <div class="input-group">
+                <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Ciudad de Entrega"> 
+            </div>
+        <br>
+        <br>
+        <P ALIGN=center><input type="submit" name="submit" value="Actualizar Orden"/></P>
+             </div> 
+    </div>
+</div>  
